@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+کافه من | قهوه و نوشیدنی
+</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<h1>
+☕ کافه شکلات
+</h1>
+
+
+
+
+<a href="login.html" class="user-login-link">
+    👤 ورود / ثبت‌نام
+</a>
+
+
+
+
+<button id="mobileBtn">
+☰
+</button>
+
+
+
+<nav id="nav">
+
+
+<a href="#">
+خانه
+</a>
+
+
+<a href="#menu">
+منو
+</a>
+
+
+<a href="#about">
+درباره ما
+</a>
+
+
+<a href="#contact">
+تماس
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<div class="header-cart">
+
+🛒
+
+<span id="headerCartCount">
+0
+</span>
+
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+<main>
+
+
+
+<section class="hero">
+
+
+<h2>
+تجربه‌ای متفاوت از قهوه
+</h2>
+
+
+<p>
+به کافه من خوش آمدید
+</p>
+
+
+
+<button id="menuBtn">
+
+مشاهده منو
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="menu" id="menu">
+
+
+<h2>
+منوی کافه
+</h2>
+
+
+
+
+<input 
+type="text"
+id="searchInput"
+placeholder="جستجوی محصول..."
+>
+
+
+
+
+<div class="filters">
+
+
+<button data-category="all">
+همه
+</button>
+
+
+<button data-category="hot">
+قهوه گرم
+</button>
+
+
+<button data-category="cold">
+سرد
+</button>
+
+
+<button data-category="dessert">
+دسر
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="menu-items">
+
+
+
+
+
+<div class="item" data-category="hot">
+
+
+<img src="images/espresso.PNG">
+
+
+<h3>
+اسپرسو
+</h3>
+
+
+<p>
+قهوه اسپرسوی قوی و خوش عطر
+</p>
+
+
+<span>
+80000 تومان
+</span>
+
+
+<button class="add-to-cart">
+
+افزودن به سبد
+
+</button>
+
+
+<a href="product.html?id=espresso">
+
+جزئیات محصول
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item" data-category="hot">
+
+
+<img src="images/latte.PNG">
+
+
+<h3>
+لاته
+</h3>
+
+
+<p>
+ترکیب قهوه و شیر گرم
+</p>
+
+
+<span>
+120000 تومان
+</span>
+
+
+<button class="add-to-cart">
+
+افزودن به سبد
+
+</button>
+
+
+
+<a href="product.html?id=latte">
+
+جزئیات محصول
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item" data-category="hot">
+
+
+<img src="images/cappuccino.PNG">
+
+
+<h3>
+کاپوچینو
+</h3>
+
+
+<p>
+اسپرسو با فوم شیر
+</p>
+
+
+<span>
+130000 تومان
+</span>
+
+
+<button class="add-to-cart">
+
+افزودن به سبد
+
+</button>
+
+
+<a href="product.html?id=cappuccino">
+
+جزئیات محصول
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="item" data-category="cold">
+
+
+<img src="images/ice-coffee.png">
+
+
+<h3>
+آیس کافی
+</h3>
+
+
+<p>
+قهوه سرد مخصوص
+</p>
+
+
+<span>
+140000 تومان
+</span>
+
+
+
+
+
+
+<button class="add-to-cart">
+
+افزودن به سبد
+
+</button>
+
+
+<a href="product.html?id=ice-coffee">
+جزئیات محصول
+</a>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="item" data-category="dessert">
+
+
+<img src="images/cake.PNG">
+
+
+<h3>
+کیک شکلاتی
+</h3>
+
+
+<p>
+کیک تازه شکلاتی
+</p>
+
+
+<span>
+150000 تومان
+</span>
+
+
+
+<button class="add-to-cart">
+    افزودن به سبد
+</button>
+
+<a href="product.html?id=cake">
+جزئیات محصول
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<section class="cart">
+
+    <h2>
+        سبد خرید
+    </h2>
+
+    <p>
+        تعداد محصولات:
+        <span id="cartCount">
+            0
+        </span>
+    </p>
+
+    <div id="cartItems">
+    </div>
+
+    <p class="total">
+
+        جمع کل:
+
+        <span id="cartTotal">
+            0
+        </span>
+
+        تومان
+
+    </p>
+
+    <button id="clearCart">
+        خالی کردن سبد
+    </button>
+
+    <button id="checkoutBtn">
+        ثبت سفارش
+    </button>
+
+</section>
+
+
+
+
+</div>
+
+
+
+
+
+
+<section class="about" id="about">
+
+
+<h2>
+درباره ما
+</h2>
+
+
+
+<p>
+
+ما بهترین قهوه‌ها و نوشیدنی‌ها را با کیفیت بالا آماده می‌کنیم.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="reviews">
+
+
+<h2>
+نظرات مشتریان
+</h2>
+
+
+
+<div class="review-container" id="reviewContainer">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="review-form">
+
+
+<input 
+id="reviewName"
+placeholder="نام شما"
+>
+
+
+<div class="stars">
+
+
+<span data-rate="1">
+☆
+</span>
+
+
+<span data-rate="2">
+☆
+</span>
+
+
+<span data-rate="3">
+☆
+</span>
+
+
+<span data-rate="4">
+☆
+</span>
+
+
+<span data-rate="5">
+☆
+</span>
+
+
+</div>
+
+
+
+<textarea 
+id="reviewText"
+placeholder="نظر شما">
+</textarea>
+
+
+
+<button id="addReview">
+
+ثبت نظر
+
+</button>
+
+
+
+<p id="reviewMessage"></p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="contact" id="contact">
+
+
+<h2>
+تماس با ما
+</h2>
+
+
+
+<form id="contactForm">
+
+<div >
+<input 
+id="name"
+placeholder="نام"
+>
+
+
+<input 
+id="email"
+placeholder="ایمیل"
+>
+
+
+
+<textarea 
+id="message"
+placeholder="پیام شما">
+</textarea>
+
+
+<button >
+
+ارسال
+
+</button>
+
+</div>
+
+
+
+
+
+
+</form>
+
+
+<p id="formMessage"></p>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<div id="toast"></div>
+
+
+
+
+<footer>
+
+<p>
+تمامی حقوق محفوظ است
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/reviews.js"></script>
+
+
+
+</body>
+
+</html>

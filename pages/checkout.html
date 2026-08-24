@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+ثبت سفارش | کافه من
+</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<h1>
+☕ ثبت سفارش
+</h1>
+
+
+
+<a href="index.html">
+بازگشت به فروشگاه
+</a>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<main>
+
+
+<section class="checkout">
+
+
+
+<h2>
+نهایی کردن سفارش
+</h2>
+
+
+
+
+
+
+
+<div id="orderSummary">
+
+
+<h3>
+سبد خرید شما
+</h3>
+
+
+
+<div id="checkoutItems">
+
+</div>
+
+
+
+<p>
+
+جمع کل:
+
+<span id="checkoutTotal">
+
+0
+
+</span>
+
+تومان
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<form id="checkoutForm">
+
+
+
+<input
+
+type="text"
+
+id="customerName"
+
+placeholder="نام و نام خانوادگی"
+
+>
+
+
+
+
+<input
+
+type="tel"
+
+id="phone"
+
+placeholder="شماره تماس"
+
+>
+
+
+
+
+
+<textarea
+
+id="address"
+
+placeholder="آدرس کامل">
+
+</textarea>
+
+
+
+
+
+
+
+
+<h3>
+روش پرداخت
+</h3>
+
+
+
+
+
+<label>
+
+<input
+
+type="radio"
+
+name="payment"
+
+value="پرداخت آنلاین"
+
+>
+
+پرداخت آنلاین
+
+</label>
+
+
+
+
+
+<label>
+
+<input
+
+type="radio"
+
+name="payment"
+
+value="پرداخت در محل"
+
+>
+
+پرداخت در محل
+
+</label>
+
+
+
+
+
+
+
+<button type="submit">
+
+ثبت سفارش نهایی
+
+</button>
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+<p id="orderMessage">
+
+</p>
+
+
+
+
+</section>
+
+
+</main>
+
+
+
+
+
+
+
+<script src="js/checkout.js"></script>
+
+
+</body>
+
+
+</html>

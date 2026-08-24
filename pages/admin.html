@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+پنل مدیریت | کافه من
+</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<header>
+
+
+<h1>
+☕ پنل مدیریت کافه
+</h1>
+
+
+
+<a href="index.html">
+بازگشت به سایت
+</a>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<main>
+
+
+<section class="admin">
+
+
+
+
+
+<h2>
+مدیریت سفارش‌ها
+</h2>
+
+
+
+
+
+
+<button id="logoutBtn">
+
+خروج از پنل
+
+</button>
+
+
+
+
+
+
+
+
+
+<!-- آمار سفارش ها -->
+
+
+<div class="stats">
+
+
+
+<div class="stat-card">
+
+
+<h3>
+تعداد سفارش‌ها
+</h3>
+
+
+<p id="totalOrders">
+0
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<h3>
+درآمد کل
+</h3>
+
+
+<p id="totalIncome">
+0
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<h3>
+در انتظار آماده سازی
+</h3>
+
+
+<p id="pendingOrders">
+0
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<h3>
+تحویل شده
+</h3>
+
+
+<p id="doneOrders">
+0
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ابزارها -->
+
+
+<div class="admin-tools">
+
+
+
+<input
+
+type="text"
+
+id="searchOrder"
+
+placeholder="جستجوی نام مشتری..."
+
+>
+
+
+
+
+<select id="filterStatus">
+
+
+<option value="all">
+
+همه سفارش‌ها
+
+</option>
+
+
+
+<option value="در انتظار آماده سازی">
+
+در انتظار آماده سازی
+
+</option>
+
+
+
+<option value="در حال آماده شدن">
+
+در حال آماده شدن
+
+</option>
+
+
+
+<option value="آماده تحویل">
+
+آماده تحویل
+
+</option>
+
+
+
+<option value="تحویل داده شد">
+
+تحویل داده شد
+
+</option>
+
+
+
+</select>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- لیست سفارش ها -->
+
+
+<div id="ordersContainer">
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<script src="js/admin.js"></script>
+
+
+
+</body>
+
+</html>

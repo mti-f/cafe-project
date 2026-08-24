@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>جزئیات محصول | کافه من</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+  
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>
+        ☕ کافه من
+    </h1>
+
+    <h1 id="darkModeBtn"></h1>
+
+
+
+    <a href="index.html">
+        بازگشت به خانه
+    </a>
+
+
+    
+
+
+</header>
+
+
+<main>
+
+
+    <!-- =========================
+         PRODUCT
+    ========================== -->
+
+    <section class="product-details">
+
+
+        <div id="productImage"></div>
+
+
+        <div class="product-info">
+
+            <h2 id="productName"></h2>
+
+            <p id="productDescription"></p>
+
+            <span id="productPrice"></span>
+
+            <button id="addProduct">
+                🛒 افزودن به سبد
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =========================
+         RATING
+    ========================== -->
+
+    <section class="rating">
+
+        <h3>
+            ⭐ امتیاز کاربران
+        </h3>
+
+
+        <div id="stars">
+
+            <span data-rate="1">☆</span>
+
+            <span data-rate="2">☆</span>
+
+            <span data-rate="3">☆</span>
+
+            <span data-rate="4">☆</span>
+
+            <span data-rate="5">☆</span>
+
+        </div>
+
+
+        <p id="ratingResult">
+            هنوز امتیازی ثبت نشده
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         RELATED
+    ========================== -->
+
+    <section class="related">
+
+        <h2>
+            محصولات مشابه
+        </h2>
+
+
+        <div id="relatedProducts"></div>
+
+    </section>
+
+
+</main>
+
+
+<script>
+
+const darkModeBtn =
+document.querySelector("#darkModeBtn");
+
+
+if(darkModeBtn){
+
+    darkModeBtn.addEventListener("click", function(){
+
+        document.body.classList.toggle("dark");
+
+        if(document.body.classList.contains("dark")){
+
+            localStorage.setItem("darkMode", "on");
+
+            darkModeBtn.textContent = "";
+
+        }else{
+
+            localStorage.setItem("darkMode", "off");
+
+            darkModeBtn.textContent = "";
+
+        }
+
+    });
+
+
+    if(localStorage.getItem("darkMode") === "on"){
+
+        document.body.classList.add("dark");
+
+        darkModeBtn.textContent = "";
+
+    }
+
+}
+
+</script>
+
+<script src="js/product.js"></script>
+
+
+<script src="js/product.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+// =========================
+// انتخاب المنت‌ها
+// =========================
+
+
+const orderIdInput =
+document.querySelector("#orderId");
+
+
+const searchBtn =
+document.querySelector("#searchOrder");
+
+
+const orderResult =
+document.querySelector("#orderResult");
+
+
+
+
+
+// =========================
+// جستجوی سفارش
+// =========================
+
+
+searchBtn.addEventListener(
+"click",
+function(){
+
+
+
+const id =
+Number(orderIdInput.value.trim());
+
+
+
+if(!id){
+
+
+orderResult.textContent =
+"لطفاً شماره سفارش را وارد کنید";
+
+
+return;
+
+
+}
+
+
+
+
+const orders =
+
+JSON.parse(
+localStorage.getItem("orders")
+)
+|| [];
+
+
+
+
+
+const order =
+
+orders.find(function(item){
+
+
+return item.id === id;
+
+
+});
+
+
+
+
+
+if(!order){
+
+
+orderResult.innerHTML = `
+
+<p>
+❌ سفارشی با این شماره پیدا نشد
+</p>
+
+`;
+
+
+return;
+
+
+}
+
+
+
+
+
+orderResult.innerHTML = `
+
+
+<div class="order-card">
+
+
+<h3>
+سفارش شماره:
+${order.id}
+</h3>
+
+
+
+<p>
+نام مشتری:
+${order.customer}
+</p>
+
+
+
+<p>
+مبلغ:
+${order.total}
+تومان
+</p>
+
+
+
+<p>
+وضعیت سفارش:
+<strong>
+${order.status || "در انتظار آماده سازی"}
+</strong>
+</p>
+
+
+
+<h4>
+محصولات:
+</h4>
+
+
+${
+
+order.items.map(function(item){
+
+
+return `
+
+<p>
+
+${item.name}
+
+×
+
+${item.quantity}
+
+</p>
+
+`
+
+
+}).join("")
+
+
+}
+
+
+
+</div>
+
+
+`;
+
+
+
+});

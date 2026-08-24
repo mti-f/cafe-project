@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ثبت سفارش | کافه من</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>☕ کافه من</h1>
+
+    <a href="index.html">
+        بازگشت به خانه
+    </a>
+
+
+    <h1 id="darkModeBtn"></h1>
+
+</header>
+
+
+<main>
+
+    <section class="checkout">
+
+        <h2>🛒 ثبت سفارش</h2>
+
+        <p class="checkout-subtitle">
+            اطلاعات خود را وارد کنید تا سفارش شما ثبت شود.
+        </p>
+
+
+        <!-- خلاصه سفارش -->
+
+        <div class="checkout-summary">
+
+            <h3>خلاصه سفارش</h3>
+
+            <div id="checkoutItems">
+                <!-- محصولات با JavaScript اینجا قرار می‌گیرند -->
+            </div>
+
+            <div class="checkout-total">
+
+                <span>مبلغ نهایی:</span>
+
+                <strong id="checkoutTotal">
+                    ۰ تومان
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- فرم سفارش -->
+
+        <form id="checkoutForm">
+
+            <h3>اطلاعات مشتری</h3>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="نام و نام خانوادگی"
+                required
+            >
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="شماره تماس"
+                required
+            >
+
+            <textarea
+                id="customerAddress"
+                placeholder="آدرس کامل"
+                required
+            ></textarea>
+
+
+            <button type="submit" id="submitOrder">
+                ثبت نهایی سفارش
+            </button>
+
+        </form>
+
+
+        <p id="checkoutMessage"></p>
+
+    </section>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+<script src="js/checkout.js"></script>
+
+
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
