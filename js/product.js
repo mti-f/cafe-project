@@ -64,7 +64,7 @@ const products = {
 
         price: "150000 تومان",
 
-        image: "images/cake.png",
+        image: "images/cake.PNG",
 
         description:
             "کیک شکلاتی تازه و خوشمزه با طعم غنی شکلات؛ انتخابی عالی برای کنار قهوه."
