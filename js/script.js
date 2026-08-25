@@ -359,7 +359,7 @@ document.querySelector("#clearCart");
 
 
 
-let cart =
+var cart =
 
 JSON.parse(
 localStorage.getItem("cartItems")
