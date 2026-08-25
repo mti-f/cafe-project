@@ -3,7 +3,7 @@
 // دریافت سبد خرید
 // ========================================
 
-let cart = JSON.parse(
+let checkoutCart  = JSON.parse(
     localStorage.getItem("cartItems")
 ) || [];
 
@@ -38,7 +38,7 @@ function renderCheckout() {
 
     // اگر سبد خالی بود
 
-    if (cart.length === 0) {
+    if (checkoutCart .length === 0) {
 
         checkoutItems.innerHTML =
             "<p>سبد خرید شما خالی است.</p>";
@@ -52,7 +52,7 @@ function renderCheckout() {
 
     // نمایش محصولات
 
-    cart.forEach(function(item) {
+    checkoutCart .forEach(function(item) {
 
         const price =
             Number(
@@ -112,7 +112,7 @@ checkoutForm.addEventListener(
         event.preventDefault();
 
 
-        if (cart.length === 0) {
+        if (checkoutCart .length === 0) {
 
             checkoutMessage.textContent =
                 "سبد خرید شما خالی است.";
@@ -159,7 +159,7 @@ checkoutForm.addEventListener(
         let total = 0;
 
 
-        cart.forEach(function(item) {
+        checkoutCart .forEach(function(item) {
 
             const price =
                 Number(
@@ -185,7 +185,7 @@ checkoutForm.addEventListener(
 
             customerAddress: address,
 
-            items: cart,
+            items: checkoutCart ,
 
             total: total,
 
@@ -239,7 +239,7 @@ checkoutForm.addEventListener(
         checkoutForm.reset();
 
 
-        cart = [];
+        checkoutCart  = [];
 
         renderCheckout();
 
