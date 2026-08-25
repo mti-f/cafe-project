@@ -1,13 +1,18 @@
 # ☕ Cafe Man
 
-A modern cafe website built with HTML, CSS and JavaScript.
+A modern responsive cafe website built with HTML, CSS, and JavaScript.
+
+## 🌐 Live Demo
+
+https://mti-f.github.io/cafe-project/
 
 ## ✨ Features
 
-- Responsive design for mobile and desktop
-- Product filtering and search
+- Responsive design for desktop and mobile
+- Product search and category filtering
 - Shopping cart system
-- Online order form
+- Quantity management
+- Checkout and order registration
 - Dark mode
 - Customer reviews section
 - Contact form
@@ -17,16 +22,28 @@ A modern cafe website built with HTML, CSS and JavaScript.
 - HTML5
 - CSS3
 - JavaScript
-- LocalStorage
+- LocalStorage API
 
-## 🌐 Live Demo
+## 📸 Screenshots
 
-https://mti-f.github.io/cafe-project/
+### Homepage
+
+![Homepage](screenshots/home.png)
+
+### Products
+
+![Products](screenshots/products.png)
+
+### Shopping Cart
+
+![Cart](screenshots/cart.png)
+
+### Checkout
+
+![Checkout](screenshots/checkout.png)
+
+### Dark Mode
+
+![Dark Mode](screenshots/dark-mode.png)
 
 ## 📁 Project Structure
-
-- index.html
-- checkout.html
-- css/
-- js/
-- images/
